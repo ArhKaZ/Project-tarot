@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href = './style.css'>
     <meta charset="UTF-8">
@@ -8,13 +9,16 @@
 <section class='gradient'>
     <section class="rect">
                 <section class="rectleft">
-                    <div class="description">
-                       <h1>sisiisisisisisisisisisi</h1>
-                        <h1>sisisisisisisisisisissisisisisis</h1>
-                        <h1>sisisisisisisisisisissisisisisis</h1>
+                    <div class="description" >
+                       <p> sissisiisisisisisisisisissisi \n sisisiisisisissisi</p>
                     </div>
-                    <div class="turncard">
-                        <img src="img/carte solo.png">
+                    <div class="card" >
+                        <div class="face-front">
+                            <img id="hcard" src="img/carte solo.png" hidden>
+                        </div>
+                        <div class="face-back">
+
+                        </div>
                     </div>
                 </section>
                 <section class="rectright">
@@ -24,10 +28,17 @@
                     <div class="table">
                         <img id="couchetable" src="img/table tarrot.png"> 
                             <div class="lebtn">
-                        <button class="buttontire"> <img id="couchecarte" src="img/paquet de carte.png"></button>
+                        <button class="buttontire" onclick="ReturnCard()"> <img id="couchecarte" src="img/paquet de carte.png"></button>
                             </div>
                     </div>
                 </section>
             </section>
 </section>
+<script>
+    function ReturnCard() {
+        document.getElementById("hcard").hidden = false;
+
+    }
+</script>
 </body>
+</html>

@@ -34,14 +34,27 @@ align-items: center;
 flex-wrap: wrap;
 }
 
-.turncard {
+.card {
 margin-right: 30vh;
 display: flex;
 width: 40%; 
 height: 51%;
 align-items: center;
+perspective-origin: center bottom;
 }
 
+.card div[class^="face"] {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
 .rectright {
 display: flex;
 width: 55%;
