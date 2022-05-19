@@ -1,0 +1,99 @@
+*
+{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+body {
+    margin: 0;
+    padding: 0;
+}
+.gradient {
+background: linear-gradient(180deg, rgba(80, 48, 120, 0.74) 12.25%, rgba(64, 13, 128, 0.673319) 44.79%, rgba(67, 8, 140, 0.677385) 67.19%, rgba(16, 12, 15, 0.666) 92.71%);
+width: 100%;
+height: 100vh;
+}
+
+.rect {
+width: 100%;
+height: 100vh;
+display: flex;
+}
+.rectleft {
+width: 45%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+
+.description {
+margin-right: 20vh;
+margin-bottom: 10vh;
+width: 50%;
+height: 15%;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.turncard {
+margin-right: 30vh;
+display: flex;
+width: 40%; 
+height: 51%;
+align-items: center;
+}
+
+.rectright {
+display: flex;
+width: 55%;
+height: 100vh;
+justify-content: flex-end;
+flex-direction: column;
+}
+
+.personnage {
+padding-left: 22vh;
+width: 206px;
+height: 229px;
+align-self: center;
+}
+
+.table {
+position: relative;
+width: 885px;
+height: 419px;
+display: flex;
+align-self: flex-end;
+}
+
+.table img {
+    position: absolute;
+    top: 0;
+    left:40;
+}
+
+.couchetable {
+    z-index: 1;
+}
+
+#couchecarte{
+margin-left: 370px;
+margin-top: 50px;
+width: 173px;
+height: 130px;
+    z-index: 2;
+}
+
+.lebtn {
+position: relative;
+display: flex;
+width: 100%;
+}
+
+.lebtn .buttontire {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
