@@ -17,10 +17,10 @@ function ReturnCard() {
         show (card);
         card.animate([
              { transform: 'rotateY(0deg)'},
-             { transform: 'rotateY(180deg)'}
+             { transform: 'rotateY(360deg)'}
         ], {
             
-            duration: 1500,
+            duration: 2000,
         })
 }
 
