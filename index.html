@@ -9,17 +9,19 @@
 <section class='gradient'>
     <section class="rect">
                 <section class="rectleft">
-                    <div class="description" >
-                       <p> sissisiisisisisisisisisissisi \n sisisiisisisissisi</p>
-                    </div>
-                    <div class="card" >
-                        <div class="face-front">
-                            <img id="hcard" src="img/carte solo.png" hidden>
-                        </div>
-                        <div class="face-back">
-
+                    <div class="thecard" >
+                        <div class="card" id="card">
+                            <div id="face-front" class="face face-front" >                       
+                            </div>
+                            <div id="face-back" class="face face-back"> 
+                            </div>
                         </div>
                     </div>
+                </section>
+                <section class="rectmid">
+                    <div class="description" id="description">
+                        <p> sissisiisisisisisisisisissisi \n sisisiisisisissisi</p>
+                     </div>
                 </section>
                 <section class="rectright">
                     <div class="personnage">
@@ -28,17 +30,12 @@
                     <div class="table">
                         <img id="couchetable" src="img/table tarrot.png"> 
                             <div class="lebtn">
-                        <button class="buttontire" onclick="ReturnCard()"> <img id="couchecarte" src="img/paquet de carte.png"></button>
+                        <button id="btn" class="buttontire" onclick="ReturnCard()"> <img id="couchecarte" src="img/paquet de carte.png"></button>
                             </div>
                     </div>
                 </section>
             </section>
 </section>
-<script>
-    function ReturnCard() {
-        document.getElementById("hcard").hidden = false;
-
-    }
-</script>
+<script type="text/javascript" src="main.js"> </script>
 </body>
 </html>
