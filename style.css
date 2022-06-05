@@ -81,15 +81,11 @@ perspective: 2000px;
     backface-visibility: hidden;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
-}
 .card .face-front {
     background-image: url(img/doscarte.png);
 }
 .card .face-back {
     transform: rotateY(180deg);
-
 }
 
 .personnage {
