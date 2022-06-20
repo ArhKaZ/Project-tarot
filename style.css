@@ -1,5 +1,13 @@
-*
-{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('fonts/Fraunces-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NewsReader';
+    src: url('fonts/Newsreader-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -42,18 +50,25 @@ align-items: center;
 
 .description {
 width: 100%;
-height: 60%;
+height: 69%;
 display: flex;
 justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
-font-size: 17px;
+
 }
 
-.description .p, 
-.description .h1 {
-   width: 20%;
-   height: 20%;
+.description p {
+    font-family: 'NewsReader', serif;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.description h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 30px;
+    color: gold;
+    font-weight: 1000;
 }
 .thecard {
 margin-right: 10vh;
@@ -89,10 +104,13 @@ perspective: 2000px;
 }
 
 .personnage {
-padding-left: 22vh;
-width: 206px;
-height: 229px;
+padding-left: 12vh;
+margin-bottom: 394px;
+width: 300px;
+height: 327px;
 align-self: center;
+position: absolute;
+z-index: 1;
 }
 
 .table {
@@ -101,6 +119,7 @@ width: 885px;
 height: 419px;
 display: flex;
 align-self: flex-end;
+
 }
 
 .table img {
@@ -110,11 +129,11 @@ align-self: flex-end;
 }
 
 .couchetable {
-    z-index: 1;
+    z-index: 3;
 }
 
 #couchecarte{
-margin-left: 370px;
+margin-left: 39vh;
 margin-top: 50px;
 width: 173px;
 height: 130px;
